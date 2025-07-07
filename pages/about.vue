@@ -19,3 +19,5 @@ export default {
   name: 'AboutPage'
 }
 </script>
+
+<style lang="scss" scoped src="~/assets/scss/pages/about.scss"></style>

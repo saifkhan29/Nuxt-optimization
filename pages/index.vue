@@ -110,9 +110,5 @@ export default {
 }
 </script>
 
-<style scoped>
-.car-images img {
-  max-width: 300px;
-  margin: 10px;
-}
-</style>
+<style lang="scss" scoped src="~/assets/scss/pages/home.scss"></style>
+
