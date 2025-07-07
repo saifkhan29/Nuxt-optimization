@@ -1,31 +1,21 @@
 <template>
-  <div>
-    <h1>{{ pageTitle }}</h1>
-    <pre>{{ reqObject }}</pre> <!-- Display the req object -->
-    <p><strong>User Agent:</strong> {{ userAgent }}</p> <!-- Display User Agent -->
+  <div class="about-container">
+    <h1 class="about-title">About Velocity Motors</h1>
+    <p class="about-text">
+      Velocity Motors is your premier destination for cutting-edge cars,
+      blending performance with luxury. From sleek sports cars to reliable family SUVs,
+      we deliver the best vehicles tailored to your lifestyle.
+    </p>
+    <p class="about-text">
+      Established in 1998, Velocity Motors has been passionate about connecting
+      drivers with their dream cars while offering exceptional service and support.
+      Join us on the road to innovation and excellence!
+    </p>
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue';
-
-// Define reactive variables
-const pageTitle = 'This is the about page 2';
-const reqObject = ref(null);
-const userAgent = ref('');
-
-// Fetch request data from the server API
-const { data, error } = await useFetch('/api/user-agent');
-
-// Handle errors
-if (error.value) {
-  console.error('Error fetching request data:', error.value);
-} else {
-  reqObject.value = data.value;  // Assign data to reqObject
+<script>
+export default {
+  name: 'AboutPage'
 }
-
-// Get user agent from the browser
-onMounted(() => {
-  userAgent.value = navigator.userAgent; // Set the user agent string
-});
 </script>

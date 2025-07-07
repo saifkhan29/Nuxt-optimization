@@ -1,0 +1,39 @@
+// Start of homepage styles
+aside {
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.car-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.car-images img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+  transition: transform 0.3s ease;
+}
+
+.car-images img:hover {
+  transform: scale(1.05);
+}
+
+.home-page-end {
+    display: inline;
+}
+
+.this-is-not-being-used {
+    display: inline;
+}
