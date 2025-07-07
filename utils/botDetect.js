@@ -39,7 +39,11 @@ const bots = [
 ]
 
 export function isBot(userAgent) {
-  if (!userAgent) return false
+    if (!userAgent) return false
+    console.log('bot detect')
   const ua = userAgent.toLowerCase()
-  return bots.some(bot => ua.includes(bot))
+    // return bots.some(bot => ua.includes(bot))
+    return true
 }
+
+console.log('bot detect')
